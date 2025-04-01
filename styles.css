@@ -37,10 +37,24 @@ body {
 }
 
 .buttons {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    
+    pointer-events: auto;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    touch-action: manipulation;
+    
     margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 15px;
+    }
+
+.button:active {
+    background-color: white;
 }
 
 .btn {
